@@ -13,7 +13,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link
         href={"/"}
-        className="flex items-center text-2xl md:text-3xl xl:text-4xl font-semibold font-serif"
+        className="flex items-center text-2xl md:text-3xl xl:text-4xl font-semibold font-serif text-white"
       >
         <Image src="/logo.png" width={80} height={80} alt="logo" />
         Recipe

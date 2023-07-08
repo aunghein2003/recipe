@@ -33,7 +33,7 @@ export function SearchInput() {
         </form>
       ) : (
         <button className="w-full" onClick={() => setOpenSearch(true)}>
-          <Search className="text-xs  text-slate-400" />
+          <Search className="text-xs  text-white" />
         </button>
       )}
     </div>

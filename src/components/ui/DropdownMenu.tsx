@@ -20,16 +20,16 @@ export function DropdownMenuDesktop({
 }: DropdownMenuProps) {
   return (
     <div className="relative inline-block">
-      <div className="inline-flex items-center space-x-2 py-3 font-semibold text-[14px] uppercase group-hover:underline underline-offset-[5px] decoration-2 decoration-[#14d3d3]">
+      <div className="inline-flex items-center space-x-2 py-3 font-semibold text-[14px] text-slate-200 uppercase group-hover:underline underline-offset-[5px] decoration-2">
         {children}
-        <ChevronDown color="#10a4a4" />
+        <ChevronDown color="#cbd5e1" />
       </div>
       <div className="absolute hidden group-hover:block hover:block w-44 h-auto border shadow-md bg-white">
         {options.map((item, i) => (
           <Link
             href={item.link}
             key={i}
-            className="block px-4 py-2 text-base font-normal decoration-1 underline-offset-4 hover:underline hover:bg-[#14d3d3]"
+            className="block px-4 py-2 text-base font-normal decoration-1 underline-offset-4 hover:underline hover:bg-primary hover:text-white"
           >
             {item.label}
           </Link>
@@ -56,13 +56,13 @@ export function DropdownMenuMobile({
     <div className="w-full">
       <div
         onClick={() => setOpenDropdown(!openDropdown)}
-        className="w-full inline-flex justify-between items-center p-3 font-semibold text-sm uppercase border-t border-[#14d3d3]"
+        className="w-full inline-flex justify-between items-center p-3 font-semibold text-sm uppercase border-t border-primary"
       >
         {children}
         {openDropdown ? (
-          <ChevronUp color="#10a4a4" />
+          <ChevronUp color="#e4002b" />
         ) : (
-          <ChevronDown color="#10a4a4" />
+          <ChevronDown color="#e4002b" />
         )}
       </div>
       {openDropdown ? (
@@ -71,7 +71,7 @@ export function DropdownMenuMobile({
             <Link
               href={item.link}
               key={i}
-              className="block px-5 py-2 text-base font-normal decoration-1 underline-offset-4 hover:underline hover:bg-[#14d3d3]"
+              className="block px-5 py-2 text-base font-normal decoration-1 underline-offset-4 hover:underline hover:bg-primary hover:text-white"
             >
               {item.label}
             </Link>
