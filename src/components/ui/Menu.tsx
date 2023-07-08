@@ -1,39 +1,153 @@
-import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { DropdownMenuDesktop, DropdownMenuMobile } from "./DropdownMenu";
 
-interface MenuProps {
-  children: string;
-  type: string;
-  options: {
-    label: string;
-    link: string;
-  }[];
+export function MobileMenu() {
+  return (
+    <ul className="flex flex-col items-center w-full">
+      <li className="group cursor-pointer w-full">
+        <DropdownMenuMobile
+          type="meal"
+          options={[
+            { label: "Breakfast", link: "/breakfast" },
+            { label: "Lunch", link: "/lunch" },
+            { label: "Dinner", link: "/dinner" },
+            { label: "Drinks", link: "/drinks" },
+            { label: "Snacks", link: "/snacks" },
+            { label: "Appetizers", link: "/appetizers" },
+          ]}
+        >
+          Meal
+        </DropdownMenuMobile>
+      </li>
+      <li className="group cursor-pointer w-full">
+        <DropdownMenuMobile
+          type="cuisine"
+          options={[
+            { label: "British", link: "/British" },
+            { label: "Italian", link: "/italian" },
+            { label: "Indian", link: "/indian" },
+            { label: "Thai", link: "/thain" },
+            { label: "Japanese", link: "/japanese" },
+            { label: "Korean", link: "/korean" },
+          ]}
+        >
+          Cuisine
+        </DropdownMenuMobile>
+      </li>
+      <li className="group cursor-pointer w-full">
+        <DropdownMenuMobile
+          type="dietary"
+          options={[
+            { label: "Vegan", link: "/vegan" },
+            { label: "Healthy", link: "/healthy" },
+            { label: "Low Carb", link: "/low_carb" },
+          ]}
+        >
+          Dietary
+        </DropdownMenuMobile>
+      </li>
+      <li className="group cursor-pointer w-full">
+        <DropdownMenuMobile
+          type="appliance"
+          options={[
+            { label: "Oven", link: "/oven" },
+            { label: "Pressure Cooker", link: "/pressure_cooker" },
+            { label: "Blender", link: "/blender" },
+            { label: "Microwave", link: "/microwave" },
+          ]}
+        >
+          In The Kitchen
+        </DropdownMenuMobile>
+      </li>
+      <li className="group cursor-pointer w-full">
+        <DropdownMenuMobile
+          type="holiday"
+          options={[
+            { label: "Christmas", link: "/christmas" },
+            { label: "Halloween", link: "/halloween" },
+            { label: "Easter", link: "/easter" },
+            { label: "Thanksgiving", link: "/thanksgiving" },
+            { label: "Spring Holiday", link: "/spring_holiday" },
+          ]}
+        >
+          Holidays & Seasons
+        </DropdownMenuMobile>
+      </li>
+    </ul>
+  );
 }
 
-export function Menu({ children, type, options }: MenuProps) {
+export function DesktopMenu() {
   return (
-    <div className="group relative inline-block cursor-pointer">
-      <div className="inline-flex items-center space-x-2 py-3 font-semibold text-[14px] uppercase group-hover:underline underline-offset-[5px] decoration-2 decoration-[#14d3d3]">
-        {children}
-        <ChevronDown color="#10a4a4" />
-      </div>
-      <div className="absolute hidden group-hover:block hover:block w-44 h-auto border shadow-md bg-white">
-        {options.map((item, i) => (
-          <Link
-            href={item.link}
-            key={i}
-            className="block px-4 py-2 text-base font-normal decoration-1 underline-offset-4 hover:underline hover:bg-[#14d3d3]"
-          >
-            {item.label}
-          </Link>
-        ))}
-        <Link
-          href={`/${type}`}
-          className="block px-4 py-2 text-base font-medium"
+    <ul className="hidden lg:flex items-center space-x-2 xl:space-x-5">
+      <li className="group cursor-pointer">
+        <DropdownMenuDesktop
+          type="meal"
+          options={[
+            { label: "Breakfast", link: "/breakfast" },
+            { label: "Lunch", link: "/lunch" },
+            { label: "Dinner", link: "/dinner" },
+            { label: "Drinks", link: "/drinks" },
+            { label: "Snacks", link: "/snacks" },
+            { label: "Appetizers", link: "/appetizers" },
+          ]}
         >
-          View All
-        </Link>
-      </div>
-    </div>
+          Meal
+        </DropdownMenuDesktop>
+      </li>
+      <li className="group cursor-pointer">
+        <DropdownMenuDesktop
+          type="cuisine"
+          options={[
+            { label: "British", link: "/British" },
+            { label: "Italian", link: "/italian" },
+            { label: "Indian", link: "/indian" },
+            { label: "Thai", link: "/thain" },
+            { label: "Japanese", link: "/japanese" },
+            { label: "Korean", link: "/korean" },
+          ]}
+        >
+          Cuisine
+        </DropdownMenuDesktop>
+      </li>
+      <li className="group cursor-pointer">
+        <DropdownMenuDesktop
+          type="dietary"
+          options={[
+            { label: "Vegan", link: "/vegan" },
+            { label: "Healthy", link: "/healthy" },
+            { label: "Low Carb", link: "/low_carb" },
+          ]}
+        >
+          Dietary
+        </DropdownMenuDesktop>
+      </li>
+      <li className="group cursor-pointer">
+        <DropdownMenuDesktop
+          type="appliance"
+          options={[
+            { label: "Oven", link: "/oven" },
+            { label: "Pressure Cooker", link: "/pressure_cooker" },
+            { label: "Blender", link: "/blender" },
+            { label: "Microwave", link: "/microwave" },
+          ]}
+        >
+          In The Kitchen
+        </DropdownMenuDesktop>
+      </li>
+      <li className="group cursor-pointer">
+        <DropdownMenuDesktop
+          type="holiday"
+          options={[
+            { label: "Christmas", link: "/christmas" },
+            { label: "Halloween", link: "/halloween" },
+            { label: "Easter", link: "/easter" },
+            { label: "Thanksgiving", link: "/thanksgiving" },
+            { label: "Spring Holiday", link: "/spring_holiday" },
+          ]}
+        >
+          Holidays & Seasons
+        </DropdownMenuDesktop>
+      </li>
+    </ul>
   );
 }
