@@ -1,7 +1,9 @@
+import HomeComponent from "@/components/home";
+
 export default function Home() {
   return (
-    <div className="mt-[10vh]">
-      <h1>Home</h1>
+    <div className="h-[150vh]">
+      <HomeComponent />
     </div>
   );
 }

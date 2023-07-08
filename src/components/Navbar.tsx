@@ -6,7 +6,7 @@ import HamburgerMenu from "./ui/HamburgerMenu";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full h-[10vh] px-5 py-3 flex items-center justify-between box-border bg-[#E2F3F3]">
+    <nav className="fixed z-50 top-0 w-full h-[10vh] px-5 py-3 flex items-center justify-between box-border ">
       {/* Mobile Hamburger Menu */}
       <HamburgerMenu />
 
