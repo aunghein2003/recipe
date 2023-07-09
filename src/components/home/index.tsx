@@ -7,7 +7,10 @@ export default function page() {
       <HeroSection />
 
       {/* Numbers Counting */}
-      <div className="p-10 mt-20 md:mt-28 lg:mt-20 flex justify-between items-center flex-wrap">
+      <div
+        data-aos="fade-up"
+        className="p-10 mt-24 sm:mt-32 md:mt-24 lg:mt-28 flex justify-between items-center flex-wrap"
+      >
         <div className="w-1/2 lg:w-1/4 mb-14 space-y-2 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-rose-700">
             500+
