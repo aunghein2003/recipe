@@ -1,4 +1,5 @@
 import HeroSection from "./HeroSection";
+import Testimonials from "./Testimonials";
 
 export default function page() {
   return (
@@ -40,6 +41,7 @@ export default function page() {
       {/* Display Dishes */}
 
       {/* Testimonials */}
+      <Testimonials />
 
       {/* App */}
     </div>
