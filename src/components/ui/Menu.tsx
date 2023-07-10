@@ -1,4 +1,4 @@
-import { DropdownMenuDesktop, DropdownMenuMobile } from "./DropdownMenu";
+import { DropdownMenuDesktop, DropdownMenuMobile } from "./dropdown-menu";
 
 export function MobileMenu() {
   return (

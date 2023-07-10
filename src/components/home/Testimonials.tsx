@@ -6,7 +6,7 @@ import "@egjs/react-flicking/dist/flicking.css";
 import "@egjs/react-flicking/dist/flicking-inline.css";
 import "@egjs/flicking-plugins/dist/flicking-plugins.css";
 
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "./testimonial-card";
 
 const testimonials = [
   {

@@ -1,5 +1,5 @@
-import HeroSection from "./HeroSection";
-import Testimonials from "./Testimonials";
+import HeroSection from "./hero-section";
+import Testimonials from "./testimonials";
 
 export default function page() {
   return (
@@ -7,7 +7,7 @@ export default function page() {
       {/* Hero Section */}
       <HeroSection />
 
-      {/* Numbers Counting */}
+      {/* Showing quantity */}
       <div
         data-aos="fade-up"
         className="p-10 mt-24 sm:mt-32 md:mt-24 lg:mt-28 flex justify-between items-center flex-wrap"
@@ -38,12 +38,10 @@ export default function page() {
         </div>
       </div>
 
-      {/* Display Dishes */}
+      {/* Popular Recipes */}
 
       {/* Testimonials */}
       <Testimonials />
-
-      {/* App */}
     </div>
   );
 }

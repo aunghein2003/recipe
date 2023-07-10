@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { MobileMenu } from "./Menu";
+import { MobileMenu } from "./menu";
 
 export default function HamburgerMenu() {
   const [openMenu, setOpenMenu] = useState(false);
