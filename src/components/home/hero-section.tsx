@@ -17,6 +17,7 @@ export default function HeroSection() {
         className="relative w-full md:w-1/2 h-full -mb-20 sm:-mb-32 md:-mb-44"
       >
         <Image
+          priority
           src={photo}
           alt="hero section"
           layout="fill"

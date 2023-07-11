@@ -40,7 +40,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="p-10" data-aos="zoom-in">
+    <div className="p-10 mb-[10vh]" data-aos="zoom-in">
       <div className="text-center space-y-3 mb-9">
         <h1 className="text-2xl sm:text-3xl font-bold font-serif">
           What do they say about us
