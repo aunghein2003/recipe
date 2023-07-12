@@ -1,6 +1,6 @@
 import HeroSection from "./hero-section";
 import Recipes from "./recipes";
-import Testimonials from "./testimonials";
+import Testimonials from "./Testimonials";
 
 export default function page() {
   return (

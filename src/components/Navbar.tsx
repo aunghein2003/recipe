@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SearchInput } from "./ui/search-input";
-import { DesktopMenu } from "./ui/menu";
+import { DesktopMenu } from "./ui/Menu";
 import HamburgerMenu from "./ui/hamburger-menu";
 
 export default function Navbar() {
