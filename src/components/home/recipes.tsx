@@ -1,9 +1,8 @@
 import { getFetcher } from "@/lib/fetcher";
 import RecipeCard from "@/components/ui/recipe-card";
-import data from "./recipes.json";
 
 export default async function Recipes() {
-  // const data = await getFetcher("recipes/list", { from: "0", size: "12" });
+  const data = await getFetcher("recipes/list", { from: "0", size: "12" });
 
   return (
     <div className="p-10 mb-[10vh]">
@@ -18,7 +17,7 @@ export default async function Recipes() {
       </div>
 
       <div className="flex justify-stretch items-center flex-wrap gap-6 xl:gap-7">
-        {data?.results.map((recipe) => (
+        {data?.results.map((recipe: any) => (
           <RecipeCard
             key={recipe.id}
             id={recipe.id}
