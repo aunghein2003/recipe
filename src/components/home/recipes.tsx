@@ -1,9 +1,9 @@
 import { getFetcher } from "@/lib/fetcher";
-import RecipeCard from "./recipe-card";
+import RecipeCard from "@/components/ui/recipe-card";
 import data from "./recipes.json";
 
 export default async function Recipes() {
-  //   const data = await getFetcher("recipes/list", { from: "0", size: "10" });
+  // const data = await getFetcher("recipes/list", { from: "0", size: "12" });
 
   return (
     <div className="p-10 mb-[10vh]">

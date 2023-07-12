@@ -6,8 +6,8 @@ export const getFetcher = async (url: string, params = {}) => {
       method: "GET",
       url: `https://tasty.p.rapidapi.com/${url}`,
       headers: {
-        "X-RapidAPI-Key": process.env.X_RapidAPI_Key,
-        "X-RapidAPI-Host": process.env.X_RapidAPI_Host,
+        "X-RapidAPI-Key": process.env.NEXT_PUBLIC_X_RapidAPI_Key,
+        "X-RapidAPI-Host": process.env.NEXT_PUBLIC_X_RapidAPI_Host,
       },
       params,
     });

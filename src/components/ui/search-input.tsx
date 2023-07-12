@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search, X } from "lucide-react";
 
@@ -9,8 +9,11 @@ export function SearchInput() {
   const [search, setSearch] = useState("");
   const [openSearch, setOpenSearch] = useState(false);
 
-  const handleSubmit = () => {
-    router.push(`/search/${search}`);
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    router.push(`/search/?query=${search}`);
+    setOpenSearch(false);
+    setSearch("");
   };
 
   return (
@@ -27,6 +30,7 @@ export function SearchInput() {
             onChange={(e) => setSearch(e.target.value)}
             className=" bg-inherit focus:outline-none placeholder:italic"
           />
+          <button type="submit"></button>
           <button onClick={() => setOpenSearch(false)}>
             <X color="#9ca3af" />
           </button>
