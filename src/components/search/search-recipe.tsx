@@ -9,7 +9,7 @@ interface SearchRecipeProps {
 async function SearchRecipe({ query }: SearchRecipeProps) {
   const data = await getFetcher("recipes/list", {
     from: "0",
-    size: "12",
+    size: "24",
     q: query,
   });
 
@@ -33,7 +33,7 @@ async function SearchRecipe({ query }: SearchRecipeProps) {
             name={recipe.name}
             image={recipe.thumbnail_url}
             total_time={recipe.total_time_minutes ?? 60}
-            user_rating={recipe.user_ratings.score}
+            user_rating={recipe.user_ratings?.score ?? 3.5}
           />
         ))}
       </div>

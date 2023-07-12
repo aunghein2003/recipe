@@ -2,7 +2,7 @@ import { getFetcher } from "@/lib/fetcher";
 import RecipeCard from "@/components/ui/recipe-card";
 
 export default async function Recipes() {
-  const data = await getFetcher("recipes/list", { from: "0", size: "12" });
+  const data = await getFetcher("recipes/list", { from: "20", size: "12" });
 
   return (
     <div className="p-10 mb-[10vh]">
