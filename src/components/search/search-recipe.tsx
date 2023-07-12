@@ -13,7 +13,7 @@ async function SearchRecipe({ query }: SearchRecipeProps) {
     q: query,
   });
 
-  if (!data.length) {
+  if (!data?.results.length) {
     return (
       <div className="mt-8 flex flex-col justify-center items-center font-serif">
         <h3 className="text-2xl">No results found for your search.</h3>
