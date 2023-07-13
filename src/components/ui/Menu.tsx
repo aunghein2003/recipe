@@ -7,12 +7,12 @@ export function MobileMenu() {
         <DropdownMenuMobile
           type="meal"
           options={[
-            { label: "Breakfast", link: "/breakfast" },
-            { label: "Lunch", link: "/lunch" },
-            { label: "Dinner", link: "/dinner" },
-            { label: "Drinks", link: "/drinks" },
-            { label: "Snacks", link: "/snacks" },
-            { label: "Appetizers", link: "/appetizers" },
+            { label: "Breakfast", link: "/tags/breakfast" },
+            { label: "Lunch", link: "/tags/lunch" },
+            { label: "Dinner", link: "/tags/dinner" },
+            { label: "Drinks", link: "/tags/drinks" },
+            { label: "Snacks", link: "/tags/snacks" },
+            { label: "Appetizers", link: "/tags/appetizers" },
           ]}
         >
           Meal
@@ -22,12 +22,12 @@ export function MobileMenu() {
         <DropdownMenuMobile
           type="cuisine"
           options={[
-            { label: "British", link: "/British" },
-            { label: "Italian", link: "/italian" },
-            { label: "Indian", link: "/indian" },
-            { label: "Thai", link: "/thain" },
-            { label: "Japanese", link: "/japanese" },
-            { label: "Korean", link: "/korean" },
+            { label: "British", link: "/tags/british" },
+            { label: "Italian", link: "/tags/italian" },
+            { label: "Indian", link: "/tags/indian" },
+            { label: "Thai", link: "/tags/thain" },
+            { label: "Japanese", link: "/tags/japanese" },
+            { label: "Korean", link: "/tags/korean" },
           ]}
         >
           Cuisine
@@ -37,9 +37,9 @@ export function MobileMenu() {
         <DropdownMenuMobile
           type="dietary"
           options={[
-            { label: "Vegan", link: "/vegan" },
-            { label: "Healthy", link: "/healthy" },
-            { label: "Low Carb", link: "/low_carb" },
+            { label: "Vegan", link: "/tags/vegan" },
+            { label: "Healthy", link: "/tags/healthy" },
+            { label: "Low Carb", link: "/tags/low_carb" },
           ]}
         >
           Dietary
@@ -49,10 +49,10 @@ export function MobileMenu() {
         <DropdownMenuMobile
           type="appliance"
           options={[
-            { label: "Oven", link: "/oven" },
-            { label: "Pressure Cooker", link: "/pressure_cooker" },
-            { label: "Blender", link: "/blender" },
-            { label: "Microwave", link: "/microwave" },
+            { label: "Oven", link: "/tags/oven" },
+            { label: "Pressure Cooker", link: "/tags/pressure_cooker" },
+            { label: "Blender", link: "/tags/blender" },
+            { label: "Microwave", link: "/tags/microwave" },
           ]}
         >
           In The Kitchen
@@ -62,11 +62,11 @@ export function MobileMenu() {
         <DropdownMenuMobile
           type="holiday"
           options={[
-            { label: "Christmas", link: "/christmas" },
-            { label: "Halloween", link: "/halloween" },
-            { label: "Easter", link: "/easter" },
-            { label: "Thanksgiving", link: "/thanksgiving" },
-            { label: "Spring Holiday", link: "/spring_holiday" },
+            { label: "Christmas", link: "/tags/christmas" },
+            { label: "Halloween", link: "/tags/halloween" },
+            { label: "Easter", link: "/tags/easter" },
+            { label: "Thanksgiving", link: "/tags/thanksgiving" },
+            { label: "Spring Holiday", link: "/tags/spring_holiday" },
           ]}
         >
           Holidays & Seasons
@@ -83,12 +83,12 @@ export function DesktopMenu() {
         <DropdownMenuDesktop
           type="meal"
           options={[
-            { label: "Breakfast", link: "/breakfast" },
-            { label: "Lunch", link: "/lunch" },
-            { label: "Dinner", link: "/dinner" },
-            { label: "Drinks", link: "/drinks" },
-            { label: "Snacks", link: "/snacks" },
-            { label: "Appetizers", link: "/appetizers" },
+            { label: "Breakfast", link: "/tags/breakfast" },
+            { label: "Lunch", link: "/tags/lunch" },
+            { label: "Dinner", link: "/tags/dinner" },
+            { label: "Drinks", link: "/tags/drinks" },
+            { label: "Snacks", link: "/tags/snacks" },
+            { label: "Appetizers", link: "/tags/appetizers" },
           ]}
         >
           Meal
@@ -98,12 +98,12 @@ export function DesktopMenu() {
         <DropdownMenuDesktop
           type="cuisine"
           options={[
-            { label: "British", link: "/British" },
-            { label: "Italian", link: "/italian" },
-            { label: "Indian", link: "/indian" },
-            { label: "Thai", link: "/thain" },
-            { label: "Japanese", link: "/japanese" },
-            { label: "Korean", link: "/korean" },
+            { label: "British", link: "/tags/british" },
+            { label: "Italian", link: "/tags/italian" },
+            { label: "Indian", link: "/tags/indian" },
+            { label: "Thai", link: "/tags/thain" },
+            { label: "Japanese", link: "/tags/japanese" },
+            { label: "Korean", link: "/tags/korean" },
           ]}
         >
           Cuisine
@@ -113,9 +113,9 @@ export function DesktopMenu() {
         <DropdownMenuDesktop
           type="dietary"
           options={[
-            { label: "Vegan", link: "/vegan" },
-            { label: "Healthy", link: "/healthy" },
-            { label: "Low Carb", link: "/low_carb" },
+            { label: "Vegan", link: "/tags/vegan" },
+            { label: "Healthy", link: "/tags/healthy" },
+            { label: "Low Carb", link: "/tags/low_carb" },
           ]}
         >
           Dietary
@@ -125,10 +125,10 @@ export function DesktopMenu() {
         <DropdownMenuDesktop
           type="appliance"
           options={[
-            { label: "Oven", link: "/oven" },
-            { label: "Pressure Cooker", link: "/pressure_cooker" },
-            { label: "Blender", link: "/blender" },
-            { label: "Microwave", link: "/microwave" },
+            { label: "Oven", link: "/tags/oven" },
+            { label: "Pressure Cooker", link: "/tags/pressure_cooker" },
+            { label: "Blender", link: "/tags/blender" },
+            { label: "Microwave", link: "/tags/microwave" },
           ]}
         >
           In The Kitchen
@@ -138,11 +138,11 @@ export function DesktopMenu() {
         <DropdownMenuDesktop
           type="holiday"
           options={[
-            { label: "Christmas", link: "/christmas" },
-            { label: "Halloween", link: "/halloween" },
-            { label: "Easter", link: "/easter" },
-            { label: "Thanksgiving", link: "/thanksgiving" },
-            { label: "Spring Holiday", link: "/spring_holiday" },
+            { label: "Christmas", link: "/tags/christmas" },
+            { label: "Halloween", link: "/tags/halloween" },
+            { label: "Easter", link: "/tags/easter" },
+            { label: "Thanksgiving", link: "/tags/thanksgiving" },
+            { label: "Spring Holiday", link: "/tags/spring_holiday" },
           ]}
         >
           Holidays & Seasons
