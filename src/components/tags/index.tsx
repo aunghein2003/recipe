@@ -1,5 +1,4 @@
 import RecipeCard from "@/components/ui/recipe-card";
-// import data from "../home/recipes.json";
 import { getFetcher } from "@/lib/fetcher";
 
 interface TagsComponentProps {

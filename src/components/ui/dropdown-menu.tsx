@@ -49,7 +49,8 @@ export function DropdownMenuMobile({
   children,
   type,
   options,
-}: DropdownMenuProps) {
+  closeMenu,
+}: DropdownMenuProps & { closeMenu: () => void }) {
   const [openDropdown, setOpenDropdown] = useState(false);
 
   return (
@@ -69,8 +70,9 @@ export function DropdownMenuMobile({
         <div className="w-full">
           {options.map((item, i) => (
             <Link
-              href={item.link}
               key={i}
+              href={item.link}
+              onClick={() => closeMenu()}
               className="block px-5 py-2 text-base font-normal decoration-1 underline-offset-4 hover:underline hover:bg-primary hover:text-white"
             >
               {item.label}

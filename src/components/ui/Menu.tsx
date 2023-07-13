@@ -1,10 +1,11 @@
 import { DropdownMenuDesktop, DropdownMenuMobile } from "./dropdown-menu";
 
-export function MobileMenu() {
+export function MobileMenu({ closeMenu }: { closeMenu: () => void }) {
   return (
     <ul className="flex flex-col items-center w-full">
       <li className="group cursor-pointer w-full">
         <DropdownMenuMobile
+          closeMenu={closeMenu}
           type="meal"
           options={[
             { label: "Breakfast", link: "/tags/breakfast" },
@@ -20,6 +21,7 @@ export function MobileMenu() {
       </li>
       <li className="group cursor-pointer w-full">
         <DropdownMenuMobile
+          closeMenu={closeMenu}
           type="cuisine"
           options={[
             { label: "British", link: "/tags/british" },
@@ -35,6 +37,7 @@ export function MobileMenu() {
       </li>
       <li className="group cursor-pointer w-full">
         <DropdownMenuMobile
+          closeMenu={closeMenu}
           type="dietary"
           options={[
             { label: "Vegan", link: "/tags/vegan" },
@@ -47,6 +50,7 @@ export function MobileMenu() {
       </li>
       <li className="group cursor-pointer w-full">
         <DropdownMenuMobile
+          closeMenu={closeMenu}
           type="appliance"
           options={[
             { label: "Oven", link: "/tags/oven" },
@@ -60,6 +64,7 @@ export function MobileMenu() {
       </li>
       <li className="group cursor-pointer w-full">
         <DropdownMenuMobile
+          closeMenu={closeMenu}
           type="holiday"
           options={[
             { label: "Christmas", link: "/tags/christmas" },

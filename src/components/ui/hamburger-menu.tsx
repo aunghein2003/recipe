@@ -39,7 +39,7 @@ export default function HamburgerMenu() {
             </svg>
           </button>
           <div className="absolute left-0 top-[10vh] w-full sm:w-1/2 md:w-1/3 max-h-[60vh] overflow-y-auto shadow-md bg-white border border-slate-300">
-            <MobileMenu />
+            <MobileMenu closeMenu={() => setOpenMenu(false)} />
           </div>
         </div>
       ) : (
