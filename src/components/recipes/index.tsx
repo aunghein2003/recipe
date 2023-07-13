@@ -32,8 +32,8 @@ export default async function RecipeComponent({ id }: RecipeComponentProps) {
           Ingredients
         </h1>
         <ul className="pt-5 pl-6 list-disc space-y-3 text-lg">
-          {data?.sections.map((comp: any) =>
-            comp?.components.map((ingredient: any) => (
+          {data?.sections?.map((comp: any) =>
+            comp?.components?.map((ingredient: any) => (
               <li key={ingredient?.id}>{ingredient?.raw_text}</li>
             ))
           )}
@@ -56,7 +56,7 @@ export default async function RecipeComponent({ id }: RecipeComponentProps) {
           Instructions
         </h1>
         <ul className="pt-5 pl-6 space-y-3 text-lg list-decimal">
-          {data?.instructions.map((instruction: any) => (
+          {data?.instructions?.map((instruction: any) => (
             <li key={instruction?.id}>{instruction?.display_text}</li>
           ))}
         </ul>
@@ -100,7 +100,7 @@ export default async function RecipeComponent({ id }: RecipeComponentProps) {
       <div className="flex space-x-5 mt-16">
         <h3 className="tex-xl font-semibold">Tags:</h3>
         <div className="flex flex-wrap gap-3 uppercase font-semibold text-sm">
-          {data?.tags.map((tag: any) => (
+          {data?.tags?.map((tag: any) => (
             <span
               key={tag?.id}
               className="p-1.5 text-red-900 bg-rose-50 hover:bg-rose-200 transition-colors duration-300"
@@ -114,7 +114,7 @@ export default async function RecipeComponent({ id }: RecipeComponentProps) {
       {/* Similiarity */}
       {data?.compilations.length ? (
         <div className="flex flex-wrap gap-5 mt-20">
-          {data.compilations.map((compilation: any) => (
+          {data.compilations?.map((compilation: any) => (
             <div
               className="relative w-full sm:w-[45%] lg:w-[30%] h-[30vh]"
               key={compilation.id}

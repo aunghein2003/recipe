@@ -19,7 +19,7 @@ export default async function TagsComponent({ name }: TagsComponentProps) {
       </h1>
 
       <div className="flex justify-stretch items-center flex-wrap gap-6 xl:gap-7">
-        {data?.results.map((recipe: any) => (
+        {data?.results?.map((recipe: any) => (
           <RecipeCard
             key={recipe.id}
             id={recipe.id}
