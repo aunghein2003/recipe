@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          strategy="lazyOnload"
+          src="//pl23289349.highcpmgate.com/68/14/a7/6814a74d0ca3e7f2142b4562ae18fac9.js"
+        />
+        {/* <script type='text/javascript' src='//pl23289349.highcpmgate.com/68/14/a7/6814a74d0ca3e7f2142b4562ae18fac9.js'></script> */}
+      </head>
       <body className={inter.className}>
         <Providers>
           <Navbar />
